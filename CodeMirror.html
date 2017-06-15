@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CodeMirror: Theme Demo</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/codemirror.css">
+<script src="js/codemirror.js"></script>
+<script src="js/javascript.js"></script>
+
+<style type="text/css">
+.CodeMirror {border: 1px solid black; font-size:13px}
+</style>
+</head>
+<body>
+
+<div>
+<textarea id="code" name="code" style="display: none;">
+
+}</textarea>
+</div>
+
+
+
+<script>
+  var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+    lineNumbers: true,
+    styleActiveLine: true,
+    matchBrackets: true
+  });
+  
+</script>
+
+</body>
+</html>
